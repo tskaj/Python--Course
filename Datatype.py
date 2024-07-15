@@ -30,3 +30,28 @@ print (float(3)) #This will print 3.0
 print(bool([])) #False
 
 print (bool([1, 2, 3])) #true
+
+d = b'some bytes'
+print(d[0])
+
+print (d.split())
+
+
+#lists
+l = [1,9,3]
+print (l)
+
+fruits = ["apple", "banana", "pineapple"]
+
+print(fruits[2])
+
+new = []
+new.append("entry to the last in the list")
+print(new)
+
+print(list("characters"))
+
+
+#Dictionaries
+
+dic = {"Abdullah" : "03165325478", "Javed": "03336857514", 2 : 5}

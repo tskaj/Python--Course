@@ -35,3 +35,14 @@ while True:
     response = input()
     if int(response)%7==0:
         break
+
+#For loop
+cities = ["karachi", "lahore", "islamabad", 'Quetta']
+
+for city in cities:
+    print(city)
+
+details = {'Karachi': 'Sindh', 'Lahore': 'Punjab', 'Islmabad': 'Federal'}
+
+for city in details:
+    print(city, details[city])
