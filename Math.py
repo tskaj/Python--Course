@@ -23,3 +23,7 @@ for i in range (5): #print the square root from 1 to 5 using for loop
     print (int(root(i))) #typecasting the float values to integer values
 
 print (power(2,5)) #print 2 raised to the power 5
+
+print ("Cosine of 2.5 is", math.cos(2.5)) #print cosine of 2.5
+
+print ("sine of 2.5 is", math.sin(2.5)) #print sine of 2.5
