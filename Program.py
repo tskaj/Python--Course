@@ -1,19 +1,25 @@
 from urllib.request import urlopen
 def fetch_words():
-# Open the URL
-    story = urlopen('http://sixty-north.com/c/t.txt')
+    """
+    1. Opens a URL with Urlopen
+    2. Initializes an empty list to store the words
+    3. Decodes each line from bytes to string
+    4. Reads the line from the response
+    5. Decodes each line from bytes to string
+    6. Closes the URL
 
-# Initialize an empty list to store the words
+    """     # Docstring
+    story = urlopen('http://sixty-north.com/c/t.txt')
     story_words = []
 
-# Read the lines from the response
-    for line in story:
-    # Decode each line from bytes to string
+    for line in story:  
         decoded_line = line.decode('utf-8')
+    
     # Optionally, you can split the line into words and append to the list
         story_words.extend(decoded_line.split())
-# Close the URL
+    
     story.close()
+    
     return story_words
 
 def print_words(story_words):
