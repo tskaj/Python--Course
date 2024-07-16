@@ -10,16 +10,19 @@ def fetch_words():
     for line in story:
     # Decode each line from bytes to string
         decoded_line = line.decode('utf-8')
-    # Print the decoded line
-        print(decoded_line)
     # Optionally, you can split the line into words and append to the list
         story_words.extend(decoded_line.split())
-
 # Close the URL
     story.close()
+    return story_words
 
-# Print the list of words (optional)
+def print_words(story_words):
+# Print the list of words
     print(story_words)
 
+def main():
+    words = fetch_words()
+    print_words(words)
+
 if __name__ == '__main__':
-    fetch_words()
+    main()
